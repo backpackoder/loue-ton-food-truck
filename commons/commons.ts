@@ -4,9 +4,13 @@ export const ROUTES = {
     LABEL: "Accueil",
     URL: "/",
   },
-  EXPERIENCE: {
-    LABEL: "Mon expérience",
-    URL: "/experiences",
+  SERVICES: {
+    LABEL: "Nos services",
+    URL: "/nos-services",
+  },
+  ABOUT: {
+    LABEL: "À propos",
+    URL: "/a-propos",
   },
   CONTACT: {
     LABEL: "Contact",

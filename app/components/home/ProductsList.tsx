@@ -34,7 +34,7 @@ function Item({ item }: { item: Product }) {
 
       <div className="flex items-center justify-between">
         <div className="flex flex-col justify-center">
-          <p className="text-xs text-gray-500">A partir de</p>
+          <p className="text-xs text-gray-500">À partir de</p>
           <p className="text-2xl">{item.PRICE}€/mois</p>
         </div>
 
