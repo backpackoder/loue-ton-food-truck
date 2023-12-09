@@ -1,8 +1,8 @@
 import Image, { StaticImageData } from "next/image";
+import { FaStar } from "react-icons/fa";
 
 // Utils
 import { reviews } from "@/utils/reviews";
-import { FaStar } from "react-icons/fa";
 
 export function Reviews() {
   return (

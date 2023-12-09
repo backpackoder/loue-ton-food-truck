@@ -3,6 +3,7 @@ import Link from "next/link";
 
 // Assets
 import BANNER_IMAGE from "@/assets/images/banner-image.jpg";
+import { ROUTES } from "@/commons/commons";
 
 export function Banner() {
   return (
@@ -22,8 +23,8 @@ export function Banner() {
       </div>
 
       <div className="absolute bottom-4 flex items-center justify-center gap-8">
-        <CTA label="Découvrir" url="/products" />
-        <CTA label="Nous contacter" url="/contact" />
+        <CTA label="Découvrir" url={ROUTES.SERVICES.URL} />
+        <CTA label="Nous contacter" url={ROUTES.CONTACT.URL} />
       </div>
     </div>
   );
