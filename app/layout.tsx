@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Food truck location",
+  title: "Loue ton Food Truck",
   description: "Location de Food trucks",
 };
 

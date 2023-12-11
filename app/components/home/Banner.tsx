@@ -17,7 +17,7 @@ export function Banner() {
       />
 
       <div className="absolute flex flex-col items-center justify-center gap-4 text-white font-semibold p-2">
-        <h1 className="text-4xl text-center sm:text-6xl">Food truck location</h1>
+        <h1 className="text-4xl text-center sm:text-6xl">Loue ton food truck</h1>
 
         <h2 className="text-lg text-center sm:text-4xl">
           Location de Food truck, remorques et véhicules magasin
