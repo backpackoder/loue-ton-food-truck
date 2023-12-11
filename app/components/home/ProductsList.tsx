@@ -4,12 +4,14 @@ import Link from "next/link";
 // Utils
 import { PRODUCTS, Product } from "@/utils/products";
 
-// Hooks
-import { stringForUrl } from "@/hooks/stringForUrl";
+// Commons
+import { ROUTES } from "@/commons/commons";
 
 export function ProductsList() {
   return (
     <section className="grid grid-cols-[repeat(auto-fill,_minmax(250px,_300px))] justify-center gap-10 w-full p-4">
+      <h2 className="col-span-full text-4xl text-center">Nos produits</h2>
+
       {PRODUCTS.map((item, index) => {
         return <Item key={index} item={item} />;
       })}
@@ -20,13 +22,13 @@ export function ProductsList() {
 function Item({ item }: { item: Product }) {
   return (
     <Link
-      href={`/product/${stringForUrl(item.NAME)}`}
+      href={ROUTES.PRODUCT.URL({ id: item.ID, name: item.NAME })}
       className="group flex flex-col justify-between gap-4 bg-[rgb(245,245,245)] p-2 rounded-lg
                 shadow-xl cursor-pointer duration-300 hover:bg-[rgb(235,235,235)]"
     >
       <Image
-        src={item.IMAGE.SRC}
-        alt={item.IMAGE.ALT}
+        src={item.IMAGES[0].SRC}
+        alt={item.IMAGES[0].ALT}
         className="object-cover w-full h-[200px] rounded-lg duration-300 group-hover:brightness-50"
       />
 

@@ -6,11 +6,11 @@ import { Reviews } from "./components/home/Reviews";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between gap-16">
+    <>
       <Banner />
       <ProductsList />
       <Text />
       <Reviews />
-    </main>
+    </>
   );
 }

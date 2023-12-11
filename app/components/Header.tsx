@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
 
 // Commons
-import { ROUTES } from "@/commons/commons";
+import { MAIN_MENU } from "@/commons/commons";
 
 // Components
 import { Logo } from "./Logo";
@@ -13,17 +13,17 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="z-10 fixed top-0 left-0 w-full text-lg animation upToDownHeader sm:text-white">
+    <header className="w-[full] h-[${navHeight}px] text-lg animation upToDownHeader sm:text-white">
       <nav
-        className={`absolute ${
+        className={`fixed ${
           open ? "translate-x-0" : "-translate-x-[calc(100%-50px)]"
         } top-0 left-0 flex justify-between text-white text-center duration-500
-        sm:translate-x-0 sm:justify-between sm:w-full`}
+        sm:static sm:translate-x-0 sm:justify-between sm:w-full`}
       >
         <ul className="top-0 left-0 flex flex-col justify-center gap-2 w-full bg-[rgb(10,10,125)] p-2 rounded-br-lg sm:flex-row">
           <Logo />
 
-          {Object.entries(ROUTES).map(([key, entries], index) => {
+          {Object.entries(MAIN_MENU).map(([key, entries], index) => {
             return (
               <li key={index} className="flex items-center cursor-pointer hover:bg-[rgb(5,5,100)]">
                 <Link
