@@ -2,7 +2,7 @@
 import { FaEnvelope, FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 
 // Commons
-import { EMAIL_URL, FACEBOOK_URL, INSTAGRAM_URL, WHATSAPP_URL } from "../commons/commons";
+// import { EMAIL_URL, FACEBOOK_URL, INSTAGRAM_URL, WHATSAPP_URL } from "../commons/commons";
 
 const facebookIcon = <FaFacebook size="35px" />;
 const instagramIcon = <FaInstagram size="35px" />;
@@ -13,21 +13,21 @@ export const contacts = [
   {
     name: "Facebook",
     icon: facebookIcon,
-    url: FACEBOOK_URL,
+    url: "",
   },
   {
     name: "Instagram",
     icon: instagramIcon,
-    url: INSTAGRAM_URL,
+    url: "",
   },
   {
     name: "Email",
     icon: mailIcon,
-    url: EMAIL_URL,
+    url: "",
   },
   {
     name: "WhatsApp",
     icon: whatsappIcon,
-    url: WHATSAPP_URL,
+    url: "",
   },
 ];
