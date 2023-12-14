@@ -1,5 +1,5 @@
 // Components
-import { ProductsList } from "../components/home/ProductsList";
+import { ProductsList } from "../components/ProductsList";
 
 export default function OurProducts() {
   return <ProductsList />;

@@ -7,7 +7,7 @@ import { reviews } from "@/utils/reviews";
 export function Reviews() {
   return (
     <article className="flex flex-col items-center gap-4 w-full p-8">
-      <h3 className="text-2xl font-bold pl-8">Nos avis</h3>
+      <h3 className="text-3xl font-bold pl-8">Nos avis</h3>
 
       <div className="grid grid-cols-[repeat(auto-fill,_minmax(250px,_300px))] justify-center gap-10 w-full p-4">
         {reviews.map((review, index) => (

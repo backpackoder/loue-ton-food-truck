@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 // Components
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Loue ton Food Truck",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
+      <body className={font.className}>
         <Header />
 
         <main className="flex min-h-screen flex-col items-center justify-between gap-16">

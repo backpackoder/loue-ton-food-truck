@@ -10,7 +10,7 @@ import { ROUTES } from "@/commons/commons";
 export function ProductsList() {
   return (
     <section className="grid grid-cols-[repeat(auto-fill,_minmax(250px,_300px))] justify-center gap-10 w-full p-4">
-      <h2 className="col-span-full text-4xl text-center">Nos produits</h2>
+      <h2 className="col-span-full text-3xl text-center font-bold">Nos produits</h2>
 
       {PRODUCTS.map((item, index) => {
         return <Item key={index} item={item} />;
@@ -32,12 +32,12 @@ function Item({ item }: { item: Product }) {
         className="object-cover w-full h-[200px] rounded-lg duration-300 group-hover:brightness-50"
       />
 
-      <h2 className="text-2xl">{item.NAME}</h2>
+      <h2 className="text-2xl font-semibold">{item.NAME}</h2>
 
       <div className="flex items-center justify-between">
         <div className="flex flex-col justify-center">
           <p className="text-xs text-gray-500">À partir de</p>
-          <p className="text-2xl">{item.PRICE}€/mois</p>
+          <p className="text-2xl font-medium">{item.PRICE}€/mois</p>
         </div>
 
         <button className="bg-blue-800 text-white p-2 rounded-lg duration-300 hover:bg-blue-950">
